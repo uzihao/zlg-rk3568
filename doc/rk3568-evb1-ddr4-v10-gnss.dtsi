@@ -1,0 +1,7 @@
+&uart4{
+	compatible = "ns16550a";
+
+	gnss {
+		compatible = "u-blox, neo-8";
+	};
+};
