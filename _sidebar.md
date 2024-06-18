@@ -24,7 +24,7 @@
   - [buildroot裁剪与加载](md/根文件系统相关/buildroot裁剪与加载.md)
   - [buildrootForAt](md/根文件系统相关/buildrootForAT.md)
   - [buildroot开发](md/根文件系统相关/buildroot开发.md)
-  - [buildroot rockchip](md/根文件系统相关/buildroot rockchip特供版配置.md)
+  - [buildrootForRockchip](md/根文件系统相关/buildroot_rockchip特供版配置.md)
   
   Linux应用
   
