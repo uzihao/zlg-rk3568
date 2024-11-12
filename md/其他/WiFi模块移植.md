@@ -58,7 +58,7 @@ ACTION=="add", ATTR{idVendor}=="0bda", ATTR{idProduct}=="1a2b", RUN+="/etc/udev/
 # /etc/udev/rules.d/99-usb-wifi-88x2bu.rules
 # 88x2bu及88x2cu(转换后)热插拔自动配置热点
 # 依赖: udev start_wifi_ap.sh
-ACTION=="add", SUBSYSTEM=="net", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="b812|c812|b82c", RUN+="/etc/udev/rules.d/start_wifi_ap.sh"
+ACTION=="add", SUBSYSTEM=="net", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="b812|c812|b82c", RUN+="/bin/sh /etc/udev/rules.d/start_wifi_ap.sh"
 ```
 
 

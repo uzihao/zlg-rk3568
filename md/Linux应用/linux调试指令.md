@@ -33,7 +33,25 @@
 | libqt*            |        |                        |
 | reoffice*         |        |                        |
 
+# 添加调试串口
+
+![image-20240808103458634](S:\笔记文档\Linux_Rockchip\md\Linux应用\linux调试指令.assets\image-20240808103458634.png)
+
+![image-20240808104040780](S:\笔记文档\Linux_Rockchip\md\Linux应用\linux调试指令.assets\image-20240808104040780.png)
 
 
 
+```bash
+# rgb8888 -> bmp
+ffmpeg -vcodec rawvideo -f rawvideo -pix_fmt rgb32 -s 640x480 -i fb.raw -f image2 -vcodec bmp fb.bmp
+ 
+# rgb565 -> bmp
+ffmpeg -vcodec rawvideo -f rawvideo -pix_fmt rgb565 -s 640x480 -i fb.raw -f image2 -vcodec bmp fb.bmp
+ 
+# bmp -> rgb8888
+ffmpeg -vcodec bmp -i fb.bmp -vcodec rawvideo -f rawvideo -pix_fmt rgb32 fb.raw
+ 
+# bmp -> rgb565
+ffmpeg -vcodec bmp -i fb.bmp -vcodec rawvideo -f rawvideo -pix_fmt rgb565 fb.raw
+```
 
